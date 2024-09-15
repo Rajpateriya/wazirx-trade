@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HodlInfo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">HODLINFO</div>
+            <div class="header-center">
+                <select id="currency-dropdown" class="dropdown">
+                    <option value="INR">INR</option>
+                </select>
+                <select id="base-unit-dropdown" class="dropdown">
+                    <!-- Options will be dynamically populated -->
+                </select>
+                <button id="buy-button" class="button">BUY USDT</button>
+            </div>
+            <div class="header-right">
+                <div class="timer">60</div>
+                <button class="button">Connect Telegram</button>
+                <div class="theme-toggle"></div>
+            </div>
+        </header>
+        <div id="loader" class="loader-container">
+            <div class="loader"></div>
+        </div>
+        <table id="crypto-table" style="display: none;">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Last</th>
+                    <th>Buy</th>
+                    <th>Sell</th>
+                    <th>Volume</th>
+                    <th>Base Unit</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
